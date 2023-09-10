@@ -35,12 +35,19 @@ const Logo = () => {
             <img key={index} src={logo.icon} alt={logo.name} />
           ))}
         </div>
-        {/* <Marquee speed={20} autoFill={true} className="block md:hidden">
-          {" "}
-          {logos.map((logo, index) => (
-            <img key={index} src={logo.icon} alt={logo.name} className="mx-5" />
-          ))}
-        </Marquee> */}
+        <div className=" md:hidden">
+          <Marquee speed={35} autoFill={true}>
+            {" "}
+            {logos.map((logo, index) => (
+              <img
+                key={index}
+                src={logo.icon}
+                alt={logo.name}
+                className="mx-5"
+              />
+            ))}
+          </Marquee>{" "}
+        </div>
       </div>{" "}
     </section>
   );

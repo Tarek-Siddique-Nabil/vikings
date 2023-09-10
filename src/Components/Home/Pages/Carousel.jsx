@@ -32,9 +32,15 @@ const Carousel = () => {
   ];
   return (
     <section className="flex flex-col gap-20 mt-5">
-      <p className="font-Hanson font-bold text-5xl text-center">
+      <p className="hidden md:block font-Hanson font-bold text-5xl text-center uppercase">
         Collection Coming Soon!
       </p>
+      <div className="md:hidden font-Hanson leading-9 font-bold uppercase text-center">
+        <p className="text-[44px] ">Collection </p>
+        <p className="text-[32px] text-whitesmoke  [-webkit-text-stroke:1px_#000]">
+          Coming Soon!
+        </p>
+      </div>
       {/* first 
     marquee  */}
       <Marquee speed={20} direction="left" autoFill={true}>

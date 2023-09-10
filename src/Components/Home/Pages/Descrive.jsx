@@ -16,12 +16,12 @@ const Descrive = () => {
         </p>
       </div>
       <img src={imageSecondary} />
-      <p className="hidden md:block font-Hanson text-5xl font-bold ">
+      <p className="hidden md:block font-Hanson text-5xl font-bold uppercase">
         The Conquest of Memedom:
       </p>
-      <div className=" font-Hanson md:hidden text-center  font-bold ">
-        <p className="  text-4xl">The Conquest</p>
-        <p className="text-[45px]">of Memedom</p>
+      <div className="uppercase  font-Hanson md:hidden text-center  font-bold ">
+        <p className="  text-[32px]">The Conquest</p>
+        <p className="text-[40px] -mt-5">of Memedom</p>
       </div>
       <div className="font-HappyMonkey font-normal   text-2xl p-4 lg:p-0">
         <p className="flex flex-col ">
