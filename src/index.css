@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Hanson Bold";
+  src: url("../src/assets/Fonts/Hanson/Hanson-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended Ultrabold";
+  src: url("../src/assets/Fonts/Monument Extended Font/MonumentExtended-Ultrabold.otf")
+    format("opentype");
+  font-display: swap;
+}
+
+.coverflow-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  perspective: -1200px;
+}
+
+.coverflow-item {
+  flex: 1;
+  padding: 10px;
+  transition: transform 0.5s;
+}
+
+.center {
+  transform: translateX(0) scale(1.5); /* Centered image */
+  z-index: 2;
+}
+
+.coverflow-item:not(.center) {
+  transform: translateX(0) scale(1); /* Adjust the scale factor for side images */
+  z-index: 1;
+}
+
+.coverflow-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid transparent;
+
+  /* Add border styling as needed */
+}
