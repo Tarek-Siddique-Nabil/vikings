@@ -7,6 +7,7 @@ import {
   imageFour,
   imageFive,
   imageSix,
+  baseImage,
 } from "../../../assets/Images";
 import Marquee from "react-fast-marquee";
 
@@ -55,7 +56,9 @@ const Carousel = () => {
           <img className="carousel-image " key={index} src={image.src} />
         ))}
       </Marquee>
-      <div className="h-[255px] bg-[#56ac22]"></div>
+      <div className="h-[255px] bg-[#56ac22] flex  items-center  justify-center">
+        <img className="scale-75 w-fit h-fit object-cover" src={baseImage} />
+      </div>
     </section>
   );
 };

@@ -46,9 +46,13 @@ const ImageSection = () => {
           <img className="w-full h-[1024px] object-cover" src={imageThree} />
         </SwiperSlide>
       </Swiper>
-      <p className=" uppercase lg:whitespace-pre font-Hanson text-4xl lg:text-8xl font-bold overflow-hidden py-2 text-whitesmoke text-center [-webkit-text-stroke:1px_#000]">
+      <p className="hidden md:block uppercase lg:whitespace-pre font-Hanson text-4xl lg:text-8xl font-bold overflow-hidden py-2 text-whitesmoke text-center [-webkit-text-stroke:1px_#000]">
         Origins of the Viking Pepes
       </p>
+      <div className=" font-Hanson leading-10  font-bold overflow-hidden  text-whitesmoke text-center [-webkit-text-stroke:1px_#000] uppercase">
+        <p className="text-[32px]"> Origins of the</p>
+        <p className="text-[40px]">Viking Pepes</p>
+      </div>
     </section>
   );
 };

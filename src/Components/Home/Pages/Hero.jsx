@@ -8,8 +8,8 @@ const Hero = () => {
     <main>
       <VideoBackground videoSrc={bg_video} />
       <div className="bg-transparent  absolute inset-0 flex flex-col items-center py-16">
-        <img className="w-[400px] h-[400px]" src={subStractImage} />
-        <img className="w-[320px] h-[320px]" src={baseImage} />
+        <img className="w-[480px] h-[480px]" src={subStractImage} />
+        <img className="w-[380px] h-[380px]" src={baseImage} />
       </div>{" "}
       <div className=" bg-[#56AC22] h-[184px] ">
         <Marquee
