@@ -54,7 +54,7 @@ const Descrive = () => {
           </span>
         </p>
       </div>
-      <img className="h-[650px]" src={imageFour} />
+      <img className="h-[1024px] object-cover" src={imageFour} />
     </section>
   );
 };
