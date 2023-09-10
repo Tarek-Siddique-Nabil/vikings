@@ -3,9 +3,9 @@ import { imageFour, imageSecondary } from "../../../assets/Images";
 
 const Descrive = () => {
   return (
-    <section className="flex flex-col gap-20 items-center text-center">
-      <div className="font-HappyMonkey font-normal text-4xl flex flex-col gap-0.5">
-        <p>&nbsp;</p>
+    <section className="flex flex-col gap-6 lg:gap-20 items-center text-center">
+      <div className="font-HappyMonkey font-normal text-2xl lg:text-4xl flex flex-col gap-0.5 p-4 lg:p-0">
+        {/* <p>&nbsp;</p> */}
         <p>The Viking Pepes trace their origins to the deep,</p>
         <p>mystical fjords of the internet, where they forged their</p>
         <p>meme-mastering skills in the fires of dankness and wit.</p>{" "}
@@ -16,10 +16,14 @@ const Descrive = () => {
         </p>
       </div>
       <img src={imageSecondary} />
-      <p className="font-Hanson text-5xl font-bold ">
+      <p className="hidden md:block font-Hanson text-5xl font-bold ">
         The Conquest of Memedom:
       </p>
-      <div className="font-HappyMonkey font-normal   text-2xl">
+      <div className=" font-Hanson md:hidden text-center  font-bold ">
+        <p className="  text-4xl">The Conquest</p>
+        <p className="text-[45px]">of Memedom</p>
+      </div>
+      <div className="font-HappyMonkey font-normal   text-2xl p-4 lg:p-0">
         <p className="flex flex-col ">
           <span>
             The Viking Pepes have set sail on the turbulent seas of social

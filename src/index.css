@@ -14,35 +14,6 @@
     format("opentype");
   font-display: swap;
 }
-
-.coverflow-container {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  perspective: -1200px;
-}
-
-.coverflow-item {
-  flex: 1;
-  padding: 10px;
-  transition: transform 0.5s;
-}
-
-.center {
-  transform: translateX(0) scale(1.5); /* Centered image */
-  z-index: 2;
-}
-
-.coverflow-item:not(.center) {
-  transform: translateX(0) scale(1); /* Adjust the scale factor for side images */
-  z-index: 1;
-}
-
-.coverflow-container img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid transparent;
-
-  /* Add border styling as needed */
+.carousel-image {
+  @apply w-[345px] h-[345px] rounded-[60px] mix-blend-multiply contrast-100 mx-5;
 }
