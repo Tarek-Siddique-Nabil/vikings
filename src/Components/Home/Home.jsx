@@ -6,7 +6,7 @@ import Footer from "./Pages/Footer";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-5">
       <Hero />
       <ImageSection />
       <Descrive />

@@ -1,18 +1,21 @@
 import React from "react";
 import { imageOne, imageThree, imageTwo } from "../../../assets/Images";
-import Marquee from "react-fast-marquee";
 
 const ImageSection = () => {
   return (
-    <section className="flex flex-col gap-10">
-      <div className="w-full flex justify-between">
-        <img className="w-[400px] h-[600px] " src={imageThree} />{" "}
-        <img className="w-[750px] h-[750px] mt-12 shadow-" src={imageOne} />
-        <img className="w-[400px] h-[600px] " src={imageTwo} />
+    <section className="flex flex-col gap-24">
+      <div className="w-full flex justify-between h-[1110px] relative">
+        <img className="w-[560px] h-[986px]" src={imageThree} />
+        <img
+          className="mix-blend-multiply  absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1024px] h-[1024px]"
+          src={imageOne}
+        />
+        <img className="w-[560px] h-[986px]" src={imageTwo} />
       </div>
-      <Marquee className="font-Hanson text-8xl font-bold overflow-hidden py-2 text-whitesmoke text-center [-webkit-text-stroke:1px_#000]">
+
+      <p className=" uppercase whitespace-pre font-Hanson text-8xl font-bold overflow-hidden py-2 text-whitesmoke text-center [-webkit-text-stroke:1px_#000]">
         Origins of the Viking Pepes
-      </Marquee>
+      </p>
     </section>
   );
 };

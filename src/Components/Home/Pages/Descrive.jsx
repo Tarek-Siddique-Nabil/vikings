@@ -3,7 +3,7 @@ import { imageFour, imageSecondary } from "../../../assets/Images";
 
 const Descrive = () => {
   return (
-    <section className="flex flex-col gap-10 items-center text-center">
+    <section className="flex flex-col gap-20 items-center text-center">
       <div className="font-HappyMonkey font-normal text-4xl flex flex-col gap-0.5">
         <p>&nbsp;</p>
         <p>The Viking Pepes trace their origins to the deep,</p>
