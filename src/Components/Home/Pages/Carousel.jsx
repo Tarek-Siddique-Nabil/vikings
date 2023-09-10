@@ -1,13 +1,10 @@
 import React from "react";
 import {
-  imageOne,
-  imageTwo,
-  imageThree,
-  imageSecondary,
   imageFour,
   imageFive,
   imageSix,
-  baseImage,
+  subStractImage,
+  imageOne,
 } from "../../../assets/Images";
 import Marquee from "react-fast-marquee";
 
@@ -57,7 +54,11 @@ const Carousel = () => {
         ))}
       </Marquee>
       <div className="h-[255px] bg-[#56ac22] flex  items-center  justify-center">
-        <img className="scale-75 w-fit h-fit object-cover" src={baseImage} />
+        <img
+          className=" w-fit h-full
+           object-cover"
+          src={subStractImage}
+        />
       </div>
     </section>
   );

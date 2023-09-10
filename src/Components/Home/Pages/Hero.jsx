@@ -13,7 +13,7 @@ const Hero = () => {
       </div>{" "}
       <div className=" bg-[#56AC22] h-[184px] ">
         <Marquee
-          speed={40}
+          speed={75}
           direction="left"
           className="h-full font-Hanson whitespace-pre text-5xl lg:text-8xl uppercase  text-center [-webkit-text-stroke:3px_#000] text-whitesmoke font-bold p-1"
         >
