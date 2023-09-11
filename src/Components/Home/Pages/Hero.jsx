@@ -3,13 +3,15 @@ import { baseImage, subStractImage } from "../../../assets/Images";
 import Marquee from "react-fast-marquee";
 import VideoBackground from "../../Video/VideoBackground";
 import bg_video from "../../../assets/videos/background video.mp4";
+import SocialMedia from "../../libs/SocialMedia";
 const Hero = () => {
   return (
     <main>
       <VideoBackground videoSrc={bg_video} />
-      <div className="bg-transparent  absolute inset-0 flex flex-col items-center py-16">
+      <div className="bg-transparent  absolute inset-0 flex flex-col items-center py-8">
         <img className="w-[480px] h-[480px]" src={subStractImage} />
         <img className="w-[380px] h-[380px]" src={baseImage} />
+        <SocialMedia />
       </div>{" "}
       <div className=" bg-[#56AC22] h-[184px] ">
         <Marquee

@@ -7,6 +7,7 @@ import {
   imageOne,
 } from "../../../assets/Images";
 import Marquee from "react-fast-marquee";
+import SocialMedia from "../../libs/SocialMedia";
 
 const Carousel = () => {
   const images = [
@@ -53,12 +54,13 @@ const Carousel = () => {
           <img className="carousel-image " key={index} src={image.src} />
         ))}
       </Marquee>
-      <div className="h-[255px] bg-[#56ac22] flex  items-center  justify-center">
+      <div className="h-[255px] bg-black flex  items-center  justify-between lg:px-32 px-10">
         <img
-          className=" w-fit h-full
+          className=" md:w-[240px] w-[109px]  md:h-[240px] h-[109px] 
            object-cover"
           src={subStractImage}
         />
+        <SocialMedia />
       </div>
     </section>
   );

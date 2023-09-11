@@ -1,50 +1,54 @@
 import React from "react";
-import {
-  trust_wallet,
-  coin_market_cap,
-  uniswap,
-  dexTools,
-} from "../../../assets/Icons/icon";
+import { dexTools, coingecko, uniswap } from "../../../assets/Icons/icon";
 import Marquee from "react-fast-marquee";
 
 const Logo = () => {
   const logos = [
     {
-      name: "trust wallet",
-      icon: trust_wallet,
-    },
-    {
-      name: "coin market cap",
-      icon: coin_market_cap,
-    },
-    {
-      name: "uni swap",
-      icon: uniswap,
-    },
-    {
-      name: "dextools",
+      name: "Dextools",
       icon: dexTools,
+    },
+
+    {
+      name: "Coingecko",
+      icon: coingecko,
+    },
+    {
+      name: "Uniswap",
+      icon: uniswap,
     },
   ];
   return (
     <section className="h-[255px] bg-[#56ac22]">
       <div className=" flex  items-center  justify-center h-full">
-        <div className="hidden md:flex gap-5 ">
-          {" "}
+        <div className="hidden md:flex  items-end gap-52 ">
           {logos.map((logo, index) => (
-            <img key={index} src={logo.icon} alt={logo.name} />
-          ))}
-        </div>
-        <div className=" md:hidden">
-          <Marquee speed={35} autoFill={true}>
-            {" "}
-            {logos.map((logo, index) => (
+            <div className="flex flex-col items-center" key={index}>
               <img
-                key={index}
+                className="w-[109px] h-[109px]"
                 src={logo.icon}
                 alt={logo.name}
-                className="mx-5"
               />
+              <p className="font-bold font-Hanson text-2xl text-whitesmoke">
+                {logo.name}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className=" md:hidden ">
+          <Marquee className="flex gap-5" speed={35} autoFill={true}>
+            {" "}
+            {logos.map((logo, index) => (
+              <div className="flex flex-col items-center mx-5 " key={index}>
+                <img
+                  src={logo.icon}
+                  alt={logo.name}
+                  className="w-[109px] h-[109px] "
+                />
+                <p className="font-bold font-Hanson text-2xl text-whitesmoke">
+                  {logo.name}
+                </p>
+              </div>
             ))}
           </Marquee>{" "}
         </div>

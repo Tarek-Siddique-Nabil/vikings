@@ -1,6 +1,7 @@
-import trust_wallet from "./trust-wallet.png";
-import coin_market_cap from "./coin-market-cap.png";
-import uniswap from "./uniswap.png";
-import dexTools from "./dxt.png";
+import telegram from "./telegram.svg";
+import twiter from "./twitter.svg";
+import dexTools from "./DEX.svg";
+import coingecko from "./coingecko_logo.svg";
+import uniswap from "./Uniswap.svg";
 
-export { trust_wallet, coin_market_cap, uniswap, dexTools };
+export { telegram, twiter, dexTools, coingecko, uniswap };
