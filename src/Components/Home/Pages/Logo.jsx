@@ -18,29 +18,33 @@ const Logo = () => {
       icon: uniswap,
     },
   ];
+  const isMobile = window.innerWidth < 768;
   return (
     <section className="h-[255px] bg-[#56ac22]">
       <div className=" flex  items-center  justify-center h-full">
-        <div className="hidden md:flex  items-end gap-52 ">
-          {logos.map((logo, index) => (
-            <div className="flex flex-col items-center" key={index}>
-              <img
-                className="w-[109px] h-[109px]"
-                src={logo.icon}
-                alt={logo.name}
-              />
-              <p className="font-bold font-Hanson text-2xl text-whitesmoke">
-                {logo.name}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className=" md:hidden ">
+        {!isMobile ? (
+          <div className="flex  items-end gap-52 ">
+            {logos.map((logo, index) => (
+              <div className="flex flex-col items-center" key={index}>
+                <img
+                  loading="lazy"
+                  className="w-[109px] h-[109px]"
+                  src={logo.icon}
+                  alt={logo.name}
+                />
+                <p className="font-bold font-Hanson text-2xl text-whitesmoke">
+                  {logo.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        ) : (
           <Marquee className="flex gap-5" speed={35} autoFill={true}>
             {" "}
             {logos.map((logo, index) => (
               <div className="flex flex-col items-center mx-5 " key={index}>
                 <img
+                  loading="lazy"
                   src={logo.icon}
                   alt={logo.name}
                   className="w-[109px] h-[109px] "
@@ -50,8 +54,8 @@ const Logo = () => {
                 </p>
               </div>
             ))}
-          </Marquee>{" "}
-        </div>
+          </Marquee>
+        )}
       </div>{" "}
     </section>
   );

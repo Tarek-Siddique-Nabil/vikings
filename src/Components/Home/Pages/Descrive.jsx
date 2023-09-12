@@ -15,7 +15,7 @@ const Descrive = () => {
           establish their dominance.
         </p>
       </div>
-      <img src={imageSecondary} />
+      <img loading="lazy" src={imageSecondary} />
       <p className="hidden md:block font-Hanson text-5xl font-bold uppercase">
         The Conquest of Memedom:
       </p>
@@ -58,7 +58,7 @@ const Descrive = () => {
           </span>
         </p>
       </div>
-      <img className="h-[1024px] object-cover" src={imageFour} />
+      <img loading="lazy" className="h-[1024px] object-cover" src={imageFour} />
     </section>
   );
 };

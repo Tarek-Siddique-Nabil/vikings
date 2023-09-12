@@ -20,7 +20,11 @@ const SocialMedia = () => {
     <div className="flex gap-3">
       {socials.map((social, index) => (
         <a key={index} href={social?.link}>
-          <img className="lg:w-10 w-5 h-5 lg:h-10" src={social?.icon} />{" "}
+          <img
+            loading="lazy"
+            className="lg:w-10 w-5 h-5 lg:h-10"
+            src={social?.icon}
+          />{" "}
         </a>
       ))}
     </div>

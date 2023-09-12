@@ -9,8 +9,12 @@ const Hero = () => {
     <main>
       <VideoBackground videoSrc={bg_video} />
       <div className="bg-transparent  absolute inset-0 flex flex-col items-center py-8">
-        <img className="w-[480px] h-[480px]" src={subStractImage} />
-        <img className="w-[380px] h-[380px]" src={baseImage} />
+        <img
+          loading="lazy"
+          className="w-[480px] h-[480px]"
+          src={subStractImage}
+        />
+        <img loading="lazy" className="w-[380px] h-[380px]" src={baseImage} />
         <SocialMedia />
       </div>{" "}
       <div className=" bg-[#56AC22] h-[184px] ">

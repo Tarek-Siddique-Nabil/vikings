@@ -9,8 +9,13 @@ const ImageSection = () => {
   return (
     <section className="flex flex-col gap-24">
       <div className="hidden  w-full md:flex justify-between h-[1110px] relative ">
-        <img className="  w-[560px] h-[986px] object-center" src={imageThree} />
         <img
+          loading="lazy"
+          className="  w-[560px] h-[986px] object-center"
+          src={imageThree}
+        />
+        <img
+          loading="lazy"
           className=" mix-blend-multiply object-center  absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1024px] h-[1024px]"
           src={imageOne}
         />
@@ -34,16 +39,28 @@ const ImageSection = () => {
           slideShadows: true,
         }}
         modules={[Autoplay, EffectCoverflow]}
-        className="mySwiper sm:hidden"
+        className="mySwiper md:hidden"
       >
         <SwiperSlide>
-          <img className="w-full h-[1024px] object-cover" src={imageOne} />
+          <img
+            loading="lazy"
+            className="w-full h-[1024px] object-cover"
+            src={imageOne}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full h-[1024px] object-cover" src={imageTwo} />
+          <img
+            loading="lazy"
+            className="w-full h-[1024px] object-cover"
+            src={imageTwo}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full h-[1024px] object-cover" src={imageThree} />
+          <img
+            loading="lazy"
+            className="w-full h-[1024px] object-cover"
+            src={imageThree}
+          />
         </SwiperSlide>
       </Swiper>
       <p className="hidden md:block uppercase lg:whitespace-pre font-Hanson text-4xl lg:text-8xl font-bold overflow-hidden py-2 text-whitesmoke text-center [-webkit-text-stroke:1px_#000]">

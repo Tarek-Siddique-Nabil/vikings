@@ -4,7 +4,11 @@ import { imageFive, imageSix } from "../../../assets/Images";
 const Footer = () => {
   return (
     <section className="flex flex-col lg:flex-row justify-between items-center lg:items-end p-2 overflow-hidden">
-      <img className="hidden md:block w-fit h-[664px]" src={imageFive} />
+      <img
+        loading="lazy"
+        className="hidden md:block w-fit h-[664px]"
+        src={imageFive}
+      />
       <div className="flex flex-col items-center  gap-12 text-center">
         <p className="font-MonumentExtendedUltrabold text-[84px] lg:text-9xl font-extrabold">
           $VPEPE
@@ -31,7 +35,11 @@ const Footer = () => {
           <p className="font-Hanson font-bold text-7xl lg:text-9xl">3/3</p>
         </div>
       </div>
-      <img className="hidden md:block w-fit h-[664px]" src={imageSix} />
+      <img
+        loading="lazy"
+        className="hidden md:block w-fit h-[664px]"
+        src={imageSix}
+      />
     </section>
   );
 };
